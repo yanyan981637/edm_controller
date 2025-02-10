@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>Unsubscribe Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>這是成功退訂閱頁面及資訊</h1>
+  <p>Email: <%= sessionData.email %></p>
+  <p>First Name: <%= sessionData.first_name %></p>
+  <p>Last Name: <%= sessionData.last_name %></p>
+  <p>is_news: <%= sessionData.is_news %></p>
+  <p>Website: <%= sessionData.website %></p>
+  <p>Lang: <%= sessionData.lang %></p>
+</body>
+</html>
