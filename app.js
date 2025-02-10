@@ -40,6 +40,19 @@ app.get('/success', (req, res) => {
     // res.send("vu03g4");
 });
 
+
+// 新增 /fail 路由：從 session 取得錯誤資料並渲染 fail.ejs 模板
+app.get('/fail', (req, res) => {
+    const errorData = req.session.errorData;
+    if (!errorData) {
+        return res.send('沒有錯誤資訊。');
+    }
+    console.log("在 /fail 路由中，從 session 取得的錯誤資料：", errorData);
+    res.render('fail', errorData);
+    // 清除 errorData，避免重複顯示
+    req.session.errorData = null;
+});
+
 // 定義 /unsubscribe 路由，處理外部 GET 請求
 app.get('/unsubscribe', async (req, res) => {
     // 從 URL query 取得參數
@@ -99,10 +112,17 @@ app.get('/unsubscribe', async (req, res) => {
             req.session.userData = { email, first_name, last_name, is_news, website, lang };
             return res.redirect('/success');
         } else {
-            return res.json({
-                status: putResult.status,
-                msg: putResult.msg
-            });
+            // 失敗時：將錯誤資訊及原始參數存入 session，再導向 /fail
+            req.session.errorData = { 
+                sessionData: { email, first_name, last_name, is_news, website, lang },
+                status: putResult.status, 
+                msg: putResult.msg 
+            };
+            return res.redirect('/fail');
+            // return res.json({
+            //     status: putResult.status,
+            //     msg: putResult.msg
+            // });
         }
 
     } catch (error) {
