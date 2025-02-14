@@ -18,6 +18,8 @@
     "unsubscribe_fail_paragraph": "If you still wish to unsubscribe, please try again or contact customer service.",
     "unsubscribe_success_greeting": "Hi %s, you have successfully unsubscribed!",
     "unsubscribe_success_paragraph": "Thank you for using our service. You are welcome to subscribe again in the future.",
-    "error_heading": "Error Message"
-  }
+    "error_heading": "Error Message",
+    "thanks_heading": "Thank you for your support!",
+    "thanks_paragraph": "Please visit <a href=\"https://nms.mio.com/Account/Login\">Mio Member Center</a> to subscribe to us."
+}
   
