@@ -1,6 +1,6 @@
-<!-- views/success.ejs -->
-<h1><%= __('unsubscribe_success_greeting', sessionData.first_name) %></h1>
-<p><%= __('unsubscribe_success_paragraph') %></p>
+<h2><%= __('unsubscribe_greeting', sessionData.first_name) %></h2>
+<p><%= __('unsubscribe_paragraph') %></p>
+<a class="unsubscribe-link" href="/edm/unsubscribe/check"><%= __('unsubscribe_button') %></a>
 
 <div class="info">
   <h2><%= __('unsubscribe_info_heading') %></h2>

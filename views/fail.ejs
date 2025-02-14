@@ -1,41 +1,19 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-  <meta charset="UTF-8">
-  <title>Unsubscribe Failed</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #f8d7da;
-      color: #721c24;
-    }
-    h1 {
-      color: #721c24;
-    }
-    .info, .error {
-      margin-bottom: 20px;
-    }
-    .info p, .error p {
-      margin: 4px 0;
-    }
-  </style>
-</head>
-<body>
-  <h1>退訂失敗</h1>
-  <div class="info">
-    <h2>提供的資訊</h2>
-    <p>Email: <%= sessionData.email %></p>
-    <p>First Name: <%= sessionData.first_name %></p>
-    <p>Last Name: <%= sessionData.last_name %></p>
-    <p>is_news: <%= sessionData.is_news %></p>
-    <p>Website: <%= sessionData.website %></p>
-    <p>Lang: <%= sessionData.lang %></p>
-  </div>
-  <div class="error">
-    <h2>錯誤訊息</h2>
-    <p>Status: <%= status %></p>
-    <p>Message: <%= msg %></p>
-  </div>
-</body>
-</html>
+<!-- views/fail.ejs -->
+<h1><%= __('unsubscribe_fail_greeting', errorData.sessionData.first_name) %></h1>
+<p><%= __('unsubscribe_fail_paragraph') %></p>
+
+<div class="info">
+  <h2><%= __('unsubscribe_info_heading') %></h2>
+  <p><%= __('unsubscribe_label_email') %>: <%= errorData.sessionData.email %></p>
+  <p><%= __('unsubscribe_label_first_name') %>: <%= errorData.sessionData.first_name %></p>
+  <p><%= __('unsubscribe_label_last_name') %>: <%= errorData.sessionData.last_name %></p>
+  <p><%= __('unsubscribe_label_is_news') %>: <%= errorData.sessionData.is_news %></p>
+  <p><%= __('unsubscribe_label_website') %>: <%= errorData.sessionData.website %></p>
+  <p><%= __('unsubscribe_label_lang') %>: <%= errorData.sessionData.lang %></p>
+</div>
+
+<div class="error">
+  <h2><%= __('error_heading') %></h2>
+  <p>Status: <%= errorData.status %></p>
+  <p>Message: <%= errorData.msg %></p>
+</div>

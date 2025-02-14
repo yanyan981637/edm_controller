@@ -1,0 +1,23 @@
+{
+    "title_unsubscribe_confirm": "您想取消訂閱嗎？",
+    "title_unsubscribe_success": "成功取消訂閱",
+    "title_unsubscribe_fail": "取消訂閱失敗",
+    "title_unsubscribe_thanks": "感謝您的支持",
+    "member_center": "會員中心",
+    "unsubscribe_greeting": "Hi %s，您想取消訂閱嗎？",
+    "unsubscribe_paragraph": "如果需要取消訂閱，請點擊下方按鈕",
+    "unsubscribe_button": "我要取消訂閱",
+    "unsubscribe_info_heading": "提供的資訊",
+    "unsubscribe_label_email": "Email",
+    "unsubscribe_label_first_name": "First Name",
+    "unsubscribe_label_last_name": "Last Name",
+    "unsubscribe_label_is_news": "is_news",
+    "unsubscribe_label_website": "Website",
+    "unsubscribe_label_lang": "Lang",
+    "unsubscribe_fail_greeting": "Hi %s，退訂失敗！",
+    "unsubscribe_fail_paragraph": "若您仍想取消訂閱，請再試一次或聯絡客服。",
+    "unsubscribe_success_greeting": "Hi %s，您已成功取消訂閱！",
+    "unsubscribe_success_paragraph": "感謝您的使用，如果日後有需要，歡迎再次訂閱。",
+    "error_heading": "錯誤訊息"
+  }
+  

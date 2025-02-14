@@ -1,9 +1,10 @@
-version: "3.8"
-
 services:
   edm_controller:
     build: .
+    container_name: edm_controller
     ports:
       - "3000:3000"
-    environment:
-      NODE_ENV: production
+    # 若要開發時同步檔案，就需要下面這段
+    volumes:
+      - ./:/app
+    command: ["npm", "run", "dev"]

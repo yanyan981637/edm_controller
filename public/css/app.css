@@ -1,0 +1,73 @@
+
+/* 整體字型與背景 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center; /* 文字置中 */
+}
+/* 置中容器，讓內容不緊貼螢幕邊緣 */
+.container {
+    padding: 20px 30px 30px 30px;
+    max-width: 600px;
+    margin: 100px auto; 
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+/* 主標題 */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+/* 一般段落 */
+p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+/* 超連結按鈕 */
+a.unsubscribe-link {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 30px;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+a.unsubscribe-link:hover {
+    color: #333;
+    background-color: #FFF;
+}
+/* 若仍想顯示原先的錯誤訊息或 sessionData，可加上區塊 */
+.info, .error {
+    margin-top: 30px;
+    text-align: left; /* 如果想在下方靠左顯示，可將其改為 left */
+}
+.info h2, .error h2 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+}
+.info p, .error p {
+    margin: 4px 0;
+    color: #777;
+}
+.info {
+    display: none;
+}
+.error {
+    display: none;
+}
+.member_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ced4da;
+}
+.mio_logo{
+    width: 140px;
+}

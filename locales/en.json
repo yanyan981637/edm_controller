@@ -1,0 +1,23 @@
+{
+    "title_unsubscribe_confirm": "Unsubscribe?",
+    "title_unsubscribe_success": "Unsubscribe Successful",
+    "title_unsubscribe_fail": "Unsubscribe Failed",
+    "title_unsubscribe_thanks": "Thank you for your operation",
+    "member_center": "Member Center",
+    "unsubscribe_greeting": "Hi %s, would you like to unsubscribe?",
+    "unsubscribe_paragraph": "If you want to unsubscribe, please click the button below.",
+    "unsubscribe_button": "Unsubscribe",
+    "unsubscribe_info_heading": "Information Provided",
+    "unsubscribe_label_email": "Email",
+    "unsubscribe_label_first_name": "First Name",
+    "unsubscribe_label_last_name": "Last Name",
+    "unsubscribe_label_is_news": "is_news",
+    "unsubscribe_label_website": "Website",
+    "unsubscribe_label_lang": "Lang",
+    "unsubscribe_fail_greeting": "Hi %s, the unsubscribe request has failed!",
+    "unsubscribe_fail_paragraph": "If you still wish to unsubscribe, please try again or contact customer service.",
+    "unsubscribe_success_greeting": "Hi %s, you have successfully unsubscribed!",
+    "unsubscribe_success_paragraph": "Thank you for using our service. You are welcome to subscribe again in the future.",
+    "error_heading": "Error Message"
+  }
+  
