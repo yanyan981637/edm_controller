@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
 const expressLayouts = require('express-ejs-layouts');
@@ -139,8 +140,8 @@ app.get('/edm/unsubscribe/check', async (req, res) => {
             method: "POST",
             headers: { "Content-Type": "application/json; charset=utf-8" },
             body: JSON.stringify({
-                "account": "bIUOO0ZnK64DiA==",
-                "pswd":   "pUBX6YjOi3Yn1tP1VbqKWk7rCnsUzR2giOf1eCjnDJjFCoZlQAzFIWxJzOikrsrB5ZkfxtUxrjTLHD5FXZ4vOvTWHN5u36kEl3blS8SVm7tgDjp1FNzTQzOdMIiDwplJt+iing=="
+                "account": process.env.ACCOUNT,
+                "pswd":   process.env.PSWD
             })
         });
         const authData = await authResponse.json();
